@@ -1,0 +1,18 @@
+[
+  {
+    "name": "Australia",
+    "src": "./assets/Australia.mp4"
+  },
+  {
+    "name": "Canada",
+    "src": "./assets/Canada.mp4"
+  },
+  { "name": "England", "src": "./assets/England.mp4" },
+  { "name": "France", "src": "./assets/France.mp4" },
+  { "name": "Japan", "src": "./assets/Japan.mp4" },
+  { "name": "Korea", "src": "./assets/Korea.mp4" },
+  { "name": "Polland", "src": "./assets/Polland.mp4" },
+  { "name": "Singapore", "src": "./assets/Singapore.mp4" },
+  { "name": "Sweden", "src": "./assets/Sweden.mp4" },
+  { "name": "Swiss", "src": "./assets/Swiss.mp4" }
+]
