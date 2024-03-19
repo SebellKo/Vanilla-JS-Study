@@ -34,7 +34,41 @@ h1 {
 button {
   font-size: 1.8rem;
   padding: 2px 3px;
-  background-color: #e4e4e4;
+  background-color: #ededed;
   border-radius: 2px;
   cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #fff;
+}
+
+ul {
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  gap: 50px;
+  border: 1px solid #010101;
+  border-radius: 8px;
+  background-color: #fff;
+  padding: 50px 100px;
+  overflow-x: scroll;
+  max-height: 70vh;
+  transition: all 1s ease;
+  > li {
+    display: flex;
+    gap: 10px;
+    .video_detail {
+      h2 {
+        max-width: 400px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+      p {
+        max-width: 200px;
+      }
+    }
+  }
 }
