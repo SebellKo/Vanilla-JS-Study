@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #f9e98a;
+}
+
+nav {
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: end;
+  > ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 30px 50px 0 0;
+    > li {
+      font-size: 1.4rem;
+      font-weight: 500;
+    }
+  }
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  .img-wrapper {
+    position: relative;
+    .japan-map {
+      width: 800px;
+      height: 800px;
+    }
+    .hukuoka {
+      position: absolute;
+      top: 609px;
+      left: 70px;
+    }
+    .kanagawa {
+      position: absolute;
+      top: 531px;
+      left: 448px;
+    }
+    .kyoto {
+      position: absolute;
+      top: 525px;
+      left: 276px;
+    }
+    .oita {
+      position: absolute;
+      top: 625px;
+      left: 100px;
+    }
+    .osaka {
+      position: absolute;
+      top: 563px;
+      left: 285px;
+    }
+    .tokyo {
+      position: absolute;
+      top: 519px;
+      left: 446px;
+    }
+  }
+  > ul {
+    display: flex;
+    gap: 10px;
+    margin-right: 50px;
+    > li {
+      font-size: 1.2rem;
+      writing-mode: vertical-lr;
+      text-orientation: upright;
+      cursor: pointer;
+    }
+  }
+}
+
+section {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  > h1 {
+    position: absolute;
+    top: 30px;
+    left: 50px;
+  }
+}
