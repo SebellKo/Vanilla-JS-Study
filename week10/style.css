@@ -51,6 +51,7 @@ main {
   justify-content: space-around;
   .img-wrapper {
     position: relative;
+    transition: all 0.3s ease;
     .japan-map {
       width: 800px;
       height: 800px;
@@ -59,31 +60,37 @@ main {
       position: absolute;
       top: 609px;
       left: 70px;
+      opacity: 0;
     }
     .kanagawa {
       position: absolute;
       top: 531px;
       left: 448px;
+      opacity: 0;
     }
     .kyoto {
       position: absolute;
       top: 525px;
       left: 276px;
+      opacity: 0;
     }
     .oita {
       position: absolute;
       top: 625px;
       left: 100px;
+      opacity: 0;
     }
     .osaka {
       position: absolute;
       top: 563px;
       left: 285px;
+      opacity: 0;
     }
     .tokyo {
       position: absolute;
       top: 519px;
       left: 446px;
+      opacity: 0;
     }
   }
   .detail {
