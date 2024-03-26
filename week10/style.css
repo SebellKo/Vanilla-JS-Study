@@ -8,6 +8,14 @@ ul {
   list-style: none;
 }
 
+a {
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
 body {
   width: 100vw;
   height: 100vh;
@@ -16,9 +24,12 @@ body {
 
 nav {
   width: 100%;
+  top: 0;
+  left: 0;
   position: fixed;
   display: flex;
   justify-content: end;
+  z-index: 999;
   > ul {
     display: flex;
     align-items: center;
@@ -27,6 +38,7 @@ nav {
     > li {
       font-size: 1.4rem;
       font-weight: 500;
+      cursor: pointer;
     }
   }
 }
@@ -74,15 +86,25 @@ main {
       left: 446px;
     }
   }
-  > ul {
+  .detail {
     display: flex;
-    gap: 10px;
+    flex-direction: column;
+    align-items: center;
     margin-right: 50px;
-    > li {
-      font-size: 1.2rem;
-      writing-mode: vertical-lr;
-      text-orientation: upright;
-      cursor: pointer;
+    gap: 20px;
+    > h1 {
+      font-size: 1.1rem;
+      font-weight: 500;
+    }
+    > ul {
+      display: flex;
+      gap: 10px;
+      > li {
+        font-size: 1.2rem;
+        writing-mode: vertical-lr;
+        text-orientation: upright;
+        cursor: pointer;
+      }
     }
   }
 }
