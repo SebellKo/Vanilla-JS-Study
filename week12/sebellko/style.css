@@ -106,12 +106,14 @@ main {
 .control_pannel {
   display: flex;
   align-items: center;
-  gap: 30px;
+  justify-content: center;
+  width: 40%;
 }
 
 .timer {
   display: flex;
   gap: 5px;
+  flex: 5;
   > h1 {
     font-size: xx-large;
   }
@@ -121,6 +123,8 @@ main {
   display: flex;
   align-items: center;
   gap: 10px;
+  flex: 5;
+
   > input {
     width: 150px;
     height: 26px;
