@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.player {
+  flex: 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.player_list {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  > li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    > img {
+      width: 220px;
+      height: 300px;
+    }
+    > h1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 200px;
+      height: 300px;
+    }
+  }
+}
+
+.draw {
+  flex: 6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.draw_section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.tool_pannel {
+  display: flex;
+  flex-direction: column;
+  > img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+}
+
+.color_pallete {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  > li {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .black {
+    background-color: black;
+  }
+  .red {
+    background-color: red;
+  }
+  .blue {
+    background-color: blue;
+  }
+  .yellow {
+    background-color: yellow;
+  }
+  .green {
+    background-color: green;
+  }
+}
+
+.control_pannel {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.timer {
+  display: flex;
+  gap: 5px;
+  > h1 {
+    font-size: xx-large;
+  }
+}
+
+.submit {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  > input {
+    width: 150px;
+    height: 26px;
+    border: 1px solid #010101;
+    border-radius: 4px;
+    font-size: large;
+    padding: 2px 0 2px 8px;
+  }
+  > button {
+    width: 100px;
+    height: 30px;
+    background-color: #010101;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+}
+
+canvas {
+  border: 1px solid black;
+}
