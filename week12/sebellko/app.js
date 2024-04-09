@@ -36,3 +36,19 @@ btn.addEventListener('click', () => {
     document.body.appendChild(newImg);
   });
 });
+
+const minute = document.getElementById('minute');
+const second = document.getElementById('second');
+
+let initialSecond = 59;
+
+setTimeout(() => {
+  minute.innerText = '00';
+  second.innerText = initialSecond;
+  const timer = setInterval(() => {
+    initialSecond -= 1;
+    if (initialSecond === 0) clearInterval(timer);
+    if (initialSecond < 10) return (second.innerText = `0${initialSecond}`);
+    second.innerText = initialSecond;
+  }, 1000);
+}, 1000);
