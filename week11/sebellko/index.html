@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>week11</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </head>
   <body>
     <header>
@@ -14,64 +15,8 @@
       </p>
     </header>
     <main>
-      <ul class="list_container">
-        <li>
-          <div class="icon_wrapper">
-            <img src="./assets/icon.svg" alt="drag&drop" />
-          </div>
-          <div class="contents">
-            <img src="./assets/alaska.jpg" alt="alaska" />
-            <div class="detail">
-              <ul class="category">
-                <li>History</li>
-                <li>Vision</li>
-                <li>Goals</li>
-              </ul>
-              <div class="description">
-                <h3>History</h3>
-                <p>
-                  I'm baby wolf pickled schlitz try-hard normcore marfa man bun
-                  mumblecore vice pop-up XOXO lomo kombucha glossier bicycle
-                  rights. Umami kinfolk salvia jean shorts offal venmo.
-                  Knausgaard tilde try-hard, woke fixie banjo man bun. Small
-                  batch tumeric mustache tbh wayfarers 8-bit shaman chartreuse
-                  tacos. Viral direct trade hoodie ugh chambray, craft beer pork
-                  belly flannel tacos single-origin coffee art party migas plaid
-                  pop-up.
-                </p>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="icon_wrapper">
-            <img src="./assets/icon.svg" alt="drag&drop" />
-          </div>
-          <div class="contents">
-            <img src="./assets/water.jpg" alt="alaska" />
-            <div class="detail">
-              <ul class="category">
-                <li>History</li>
-                <li>Vision</li>
-                <li>Goals</li>
-              </ul>
-              <div class="description">
-                <h3>History</h3>
-                <p>
-                  I'm baby wolf pickled schlitz try-hard normcore marfa man bun
-                  mumblecore vice pop-up XOXO lomo kombucha glossier bicycle
-                  rights. Umami kinfolk salvia jean shorts offal venmo.
-                  Knausgaard tilde try-hard, woke fixie banjo man bun. Small
-                  batch tumeric mustache tbh wayfarers 8-bit shaman chartreuse
-                  tacos. Viral direct trade hoodie ugh chambray, craft beer pork
-                  belly flannel tacos single-origin coffee art party migas plaid
-                  pop-up.
-                </p>
-              </div>
-            </div>
-          </div>
-        </li>
-      </ul>
+      <ul id="listContainer" class="list_container"></ul>
     </main>
   </body>
+  <script type="module" src="./app.js"></script>
 </html>
