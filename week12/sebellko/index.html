@@ -24,7 +24,7 @@
           </li>
           <li>
             <h3>Player 4</h3>
-            <h1>Answer</h1>
+            <h1 id="answer">Answer</h1>
           </li>
         </ul>
       </section>
@@ -32,15 +32,15 @@
         <div class="draw_section">
           <canvas></canvas>
           <div class="tool_pannel">
-            <ul class="color_pallete">
+            <ul id="colorPallete" class="color_pallete">
               <li class="black"></li>
               <li class="red"></li>
               <li class="blue"></li>
               <li class="yellow"></li>
               <li class="green"></li>
             </ul>
-            <img src="./assets/icons8-pen-48.png" />
-            <img src="./assets/icons8-erase-32.png" />
+            <img id="pen" src="./assets/icons8-pen-48.png" />
+            <img id="eraser" src="./assets/icons8-erase-32.png" />
           </div>
         </div>
         <div class="control_pannel">
@@ -50,8 +50,8 @@
             <h1 id="second">00</h1>
           </span>
           <span class="submit">
-            <input type="text" disabled />
-            <button>Save</button>
+            <input id="answerInput" type="text" />
+            <button id="submitButton">Submit</button>
           </span>
         </div>
       </section>
